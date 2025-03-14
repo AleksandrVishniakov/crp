@@ -6,6 +6,8 @@ btn.addEventListener('click', async () => {
     const variant = input.value
     const variantURL = "https://kompege.ru/api/v1/variant/kim/" + variant
 
+    out.innerHTML = "pending..."
+
     const response = await fetch(variantURL, {
         headers: {
             "Content-Type": "application/json",
@@ -14,6 +16,8 @@ btn.addEventListener('click', async () => {
             "Host": "kompege.ru",
         }
     })
+
+    out.innerHTML = ""
 
     tasks = (await response.json()).tasks
 
