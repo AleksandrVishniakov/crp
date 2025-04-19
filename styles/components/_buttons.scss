@@ -1,0 +1,23 @@
+.toggle-theme-button {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--color-primary);
+
+    svg:nth-child(2) {
+        display: none;
+    }
+    &[data-theme="light"] {
+        svg:nth-child(2) {
+            display: block;
+        }
+        svg:nth-child(1) {
+            display: none;
+        }
+    }
+
+    svg {
+        width: 24px;
+        height: 24px;
+        fill: var(--color-on-primary);
+    }
+}

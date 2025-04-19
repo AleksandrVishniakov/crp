@@ -1,0 +1,60 @@
+.full-width {
+    width: 100%;
+}
+
+.centered-h {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.none {
+    display: none !important;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jc-sp-btw {
+    justify-content: space-between;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-3 {
+    flex: 3;
+}
+
+.flex-6 {
+    flex: 6;
+}
