@@ -103,7 +103,11 @@ export class VariantFormController {
         const url = `https://kompege.ru/api/v1/variant/kim/${id}`;
 
         try {
-            const response = await fetch(url);
+            const response = await fetch(url, {
+                headers: {
+                    "Accept": "application/json",
+                }
+            });
 
             if (!response.ok) {
                 this._handleError(`RequestError. Status ${response.statusText}`);
